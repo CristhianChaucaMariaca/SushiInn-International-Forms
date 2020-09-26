@@ -1,0 +1,13 @@
+extends ../templates/template-dishes
+include ../mixins/platos
+block append config
+    // TODO: * Modificar nombre de Objeto
+    - page = tallarines.name
+    // TODO: * Modificar nombre de Objeto
+    - metadescripcion = tallarines.descripcion
+block content
+    .container-dishes
+        .dishes.container
+            include ../mixins/platos-body
+            // TODO: * Modificar nombre de Objeto
+            +platos-body(tallarines)

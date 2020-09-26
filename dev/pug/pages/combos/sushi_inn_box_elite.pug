@@ -1,0 +1,15 @@
+extends ../../templates/template-plate.pug
+include ../../mixins/plato
+append config
+    //- TODO: * Modificar el numero de plato. Y el nombre del objeto
+    - plato = 5;
+    //- - numSponsor= 0; 
+    - page = combos.content[plato].text
+    - metadescripcion = combos.content[plato].description
+block content
+    // TODO: 
+    +plato(combos.content[plato], sponsor[numSponsor],combos.category)
+            
+    include ../../blocks/btn_atras
+    //- TODO:
+    +btn(combos.category)
