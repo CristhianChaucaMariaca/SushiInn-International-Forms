@@ -1,0 +1,6 @@
+#prepros.config
+
+dev/html
+dev/css
+*.rar
+platos/

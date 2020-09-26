@@ -1,0 +1,66 @@
+include sponsor
+mixin plato(plato,sponsor,category)
+    .content__plate
+        .plate
+            .plate__img
+                .plate__logo
+                    img(src="media/"+logo.img+logo.extention, alt=logo.alt)
+                picture.plate__cont__picture
+                    img.plate__picture(srcset="media/"+category+"/"+plato.img.picture+plato.img.extention, alt=title)
+            .container
+                .plate__body
+                    h2.plate__title !{plato.text}
+                    if(plato.price_uno)
+                        p.plate__price Bs&nbsp;!{plato.price_uno}
+                    if(plato.price_dos)
+                        p.plate__price Bs&nbsp;!{plato.price_dos}
+                    if(plato.description)
+                        p.plate__text !{plato.description}
+            .sponsors
+                .sponsors__body
+                    include sponsor
+                    +sponsor(sponsor)
+mixin plato2(plato,sponsor,category)
+    .content__plate
+        .plate
+            .plate__img
+                .plate__logo
+                    img(src="media/"+logo.img+logo.extention, alt=logo.alt)
+                picture.plate__cont__picture
+                    img.plate__picture(srcset="media/"+category+"/"+plato.img.picture+plato.img.extention, alt=title)
+            .container
+                .plate__body
+                    h2.plate__title !{plato.text}
+                    if(plato.price_uno)
+                        p.plate__price M = Bs&nbsp;!{plato.price_uno}
+                    if(plato.price_dos)
+                        p.plate__price XL = Bs&nbsp;!{plato.price_dos}
+                    if(plato.description)
+                        p.plate__text !{plato.description}
+            .sponsors
+                .sponsors__body
+                    include sponsor
+                    +sponsor(sponsor)
+mixin plato3(plato,sponsor,category)
+    .content__plate
+        .plate
+            .plate__img
+                .plate__logo
+                    img(src="media/"+logo.img+logo.extention, alt=logo.alt)
+                picture.plate__cont__picture
+                    img.plate__picture(srcset="media/"+category+"/"+plato.img.picture+plato.img.extention, alt=title)
+            .container
+                .plate__body
+                    h2.plate__title !{plato.text}
+                    if(plato.price_uno)
+                        p.plate__price S = Bs&nbsp;!{plato.price_uno}
+                    if(plato.price_dos)
+                        p.plate__price M = Bs&nbsp;!{plato.price_dos}
+                    if(plato.price_tres)
+                        p.plate__price XL = Bs&nbsp;!{plato.price_tres}
+                    if(plato.description)
+                        p.plate__text !{plato.description}
+            .sponsors
+                .sponsors__body
+                    include sponsor
+                    +sponsor(sponsor)

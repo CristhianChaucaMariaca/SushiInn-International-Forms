@@ -1,0 +1,15 @@
+extends ../../templates/template-plate.pug
+include ../../mixins/plato
+append config
+    //- TODO: * Modificar el numero de plato. Y el nombre del objeto
+    - plato = 2;
+    //- - numSponsor= 0; 
+    - page = gyros.content[plato].text
+    - metadescripcion = gyros.content[plato].description
+block content
+    // TODO: 
+    +plato(gyros.content[plato], sponsor[numSponsor],gyros.category)
+            
+    include ../../blocks/btn_atras
+    //- TODO:
+    +btn(gyros.category)

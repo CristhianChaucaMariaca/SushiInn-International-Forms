@@ -1,0 +1,4 @@
+mixin platos-body(plates)
+    each plate in plates.content
+        if(plate.status === true)
+            +platos(plate,plates.category)

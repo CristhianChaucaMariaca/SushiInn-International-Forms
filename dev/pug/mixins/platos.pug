@@ -1,0 +1,13 @@
+mixin platos(platos,category)
+    .dishes__plate
+        a(href=platos.link).dishes__link
+            picture.dishes__picture
+                img.dishes__img(alt=text,srcset="media/"+category+"/thumbnail/"+platos.img.picture+"-thumbnail"+platos.img.extention,title=platos.text,loading="lazy")
+        .dishes__name
+            span.dishes__text !{platos.text}
+            if(platos.price_uno)
+                span.dishes__price Bs&nbsp;#{platos.price_uno} 
+            if(platos.price_dos)
+                span.dishes__price&nbsp;-&nbsp;#{platos.price_dos}
+            if(platos.price_tres)
+                span.dishes__price&nbsp;-&nbsp;#{platos.price_tres}

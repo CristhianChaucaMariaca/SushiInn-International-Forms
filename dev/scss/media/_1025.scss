@@ -1,0 +1,5 @@
+@media screen and(max-width:1025px) {
+  .dishes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

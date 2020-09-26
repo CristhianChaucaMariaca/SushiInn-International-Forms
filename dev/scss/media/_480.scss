@@ -1,0 +1,112 @@
+@media screen and(max-width:480px) {
+  body {
+    font-size: 16px;
+    @if $fondo-s {
+      background-image: url($fondo-s);
+    }
+  }
+  .container {
+    width: 90%;
+  }
+  .headerdishes {
+  }
+  .dishes {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 15px;
+    &__text {
+      text-align: center;
+      // line-height: 0.92em;
+    }
+    &__name {
+      font-size: 0.8em;
+    }
+  }
+  .plate {
+    font-size: 16px;
+    &__img {
+      width: 100%;
+    }
+    &__body {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    &__logo {
+      width: 100px;
+    }
+    &__title {
+      line-height: 1.2em;
+      margin-top: 20px;
+    }
+    &__price {
+      font-size: 1.4em;
+    }
+    &__text {
+      margin-top: 20px;
+      font-size: .9em;
+    }
+  }
+  .sponsors {
+    &__body {
+      flex-direction: column;
+    }
+  }
+  .header {
+    &__logo {
+      width: 55%;
+    }
+  }
+  .menu {
+    width: 100%;
+    margin: 0 auto;
+    &__body{
+    }
+    &__nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      grid-row-gap: 0px;
+      grid-column-gap: 0px;
+      width: 90%;
+      margin: 0 auto;
+    }
+    &__item {
+      font-size: 1.1em;
+      width: 130px;
+      &:nth-child(odd)
+      {
+        margin-right: 15px;
+        margin-bottom: 30px;
+      }
+      &:nth-child(even)
+      {
+        margin-left: 15px;
+        margin-bottom: 30px;
+      }
+      &:last-child{
+        margin: 0 auto;
+      }
+    }
+  }
+  .btn {
+    width: 60px;
+  }
+  .lists {
+    font-size: 0.9em;
+    &__content {
+      width: 85%;
+      margin: 0 auto;
+    }
+  }
+  .chops {
+    &__prices {
+      grid-template-columns: repeat(4, 50px);
+    }
+    &__price {
+      width: 50px;
+    }
+    &__name {
+      width: 50px;
+    }
+  }
+}

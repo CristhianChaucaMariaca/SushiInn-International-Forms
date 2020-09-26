@@ -1,0 +1,102 @@
+.lists {
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  color: $color-t;
+
+  &__header {
+    text-align: center;
+    width: 14em;
+    position: relative;
+    margin: 0 auto;
+  }
+  &__title {
+    font-size: 1.35em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: $font;
+  }
+  &__marco {
+  }
+  &__body {
+  }
+  &__item {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 7px;
+    position: relative;
+    font-family: $font-l;
+  }
+  &__name {
+    flex-grow: 1;
+  }
+  &__line {
+    border-bottom: 2px $colorprimario;
+  }
+  &--uno {
+    flex-grow: 1;
+  }
+  &--prices {
+    width: 70px;
+    text-align: center;
+  }
+  &__names {
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+  }
+  &__drinkname {
+    height: 1px;
+    flex-grow: 1;
+  }
+  &__name-price {
+    width: 70px;
+    text-align: center;
+  }
+  &__price {
+    width: 50px;
+    text-align: right;
+  }
+  &__price--right {
+    text-align: right;
+    width: 50px;
+  }
+}
+.chops {
+  display: flex;
+  flex-direction: column;
+  font-family: $font-l;
+  &__header {
+    display: flex;
+  }
+  &__name {
+    min-height: 1px;
+    width: 70px;
+    text-align: right;
+    &:first-child {
+      flex-grow: 1;
+    }
+  }
+  &__name-bebida {
+    flex-grow: 1;
+  }
+  &__price {
+    text-align: right;
+  }
+  &__body {
+    display: flex;
+    flex-direction: row;
+  }
+  &__prices {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+  }
+  &__items {
+    flex-grow: 1;
+  }
+}

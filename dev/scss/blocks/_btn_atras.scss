@@ -1,0 +1,11 @@
+.btn{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    max-width: 90px;
+    &__link{
+    }
+    &__img{
+       width: 100%; 
+    }
+}

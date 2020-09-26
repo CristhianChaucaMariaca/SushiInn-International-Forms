@@ -1,0 +1,15 @@
+.header {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  &__img {
+    max-width: 100%;
+    width: 100%;
+    z-index: 99;
+  }
+  &__logo {
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+  }
+}
