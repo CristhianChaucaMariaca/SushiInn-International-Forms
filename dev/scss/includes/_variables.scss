@@ -1,12 +1,10 @@
 $colorprimario: #000; // TODO: * Modificar color primario
-$colorsecundario: rgb(201, 153, 60); // TODO: * Modificar color secundario
+$colorsecundario: rgb(255, 0, 0); // TODO: * Modificar color secundario
 $color-p: #fff;
-$color-f: $colorprimario;
+$color-f: $colorsecundario;
 $color-t: $color-p;
 $color-titulo: $colorprimario;
 $fondo-l: "media/fondo-long.jpg"; // TODO: * Modificar fondo de pantalla
 $fondo-m: "media/fondo-mediom.jpg";
 $fondo-s: "media/fondo-small.jpg"; // TODO: * Modificar fondo de pantalla
-$font: "fonts/GoboldBold.otf";
-$font-l: "fonts/GoboldLight.otf";
-$font-r: "fonts/GoboldRegular.otf";
+$font: "fonts/go3v2.ttf";

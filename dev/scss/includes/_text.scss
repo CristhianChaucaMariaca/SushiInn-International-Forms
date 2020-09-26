@@ -2,16 +2,7 @@
   font-family: "font1";
   src: url($font) format("truetype");
 }
-@font-face {
-  font-family: "font2";
-  src: url($font-l) format("truetype");
-}
-@font-face {
-  font-family: "font3";
-  src: url($font-r) format("truetype");
-}
-$font-r: "font3";
-$font-l: "font2";
+
 $font: "font1";
 body {
   font-family: $font;

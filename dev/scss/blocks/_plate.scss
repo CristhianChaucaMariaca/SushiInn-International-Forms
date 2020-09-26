@@ -27,22 +27,13 @@
     }
   }
   &__cont__picture {
-    overflow: hidden;
     display: block;
-    position: relative;
-    &:after {
-      content: "";
-      border: solid 2px $color-p;
-      width: 91%;
-      height: 90%;
-      position: absolute;
-      top: 4.5%;
-      left: 4%;
-    }
   }
   &__picture {
     width: 100%;
     transition: transform 5.5s linear;
+    border-top: 7px solid $colorprimario;
+    border-bottom: 7px solid $colorprimario;
   }
   &__body {
     color: $color-t;
@@ -54,7 +45,6 @@
     margin-bottom: 7px;
     text-align: center;
     text-transform: uppercase;
-    font-family: $font-r;
   }
   &__price {
     text-align: center;
@@ -62,11 +52,10 @@
   }
   &__text {
     font-size: 1.1em;
-    margin-top: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
-    font-family: $font-l;
     text-transform: uppercase;
-    line-height: 1.8;
   }
   &__pepsi {
     width: 40px;

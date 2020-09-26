@@ -27,13 +27,6 @@ canvas {
 }
 
 body {
-  @if $fondo-l {
-    background-image: url($fondo-l);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-attachment: fixed;
-    background-size: cover;
-  }
   @if $color-f {
     background-color: $color-f;
   }

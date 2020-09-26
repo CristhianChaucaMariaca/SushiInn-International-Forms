@@ -30,7 +30,6 @@
     align-items: baseline;
     margin-bottom: 7px;
     position: relative;
-    font-family: $font-l;
   }
   &__name {
     flex-grow: 1;
@@ -70,7 +69,6 @@
 .chops {
   display: flex;
   flex-direction: column;
-  font-family: $font-l;
   &__header {
     display: flex;
   }
