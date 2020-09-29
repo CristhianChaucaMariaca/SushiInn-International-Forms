@@ -7,8 +7,9 @@ append config
     - page = sushis.content[plato].text
     - metadescripcion = sushis.content[plato].description
 block content
-    // TODO: 
-    +plato(sushis.content[plato], sponsor[numSponsor],sushis.category)
+    // TODO:
+    - var unidades = {valoruno: "10 uni", valordos:"5 uni"}
+    +platoUnidades(sushis.content[plato], sponsor[numSponsor],sushis.category, unidades)
             
     include ../../blocks/btn_atras
     //- TODO:

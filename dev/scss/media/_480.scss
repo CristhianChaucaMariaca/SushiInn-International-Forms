@@ -1,9 +1,6 @@
 @media screen and(max-width:480px) {
   body {
     font-size: 16px;
-    @if $fondo-s {
-      background-image: url($fondo-s);
-    }
   }
   .container {
     width: 90%;
@@ -16,7 +13,7 @@
     grid-row-gap: 15px;
     &__text {
       text-align: center;
-      // line-height: 0.92em;
+      font-size: 1.1em;
     }
     &__name {
       font-size: 0.8em;
@@ -37,6 +34,7 @@
     &__title {
       line-height: 1.2em;
       margin-top: 20px;
+      letter-spacing: .05em;
     }
     &__price {
       font-size: 1.4em;

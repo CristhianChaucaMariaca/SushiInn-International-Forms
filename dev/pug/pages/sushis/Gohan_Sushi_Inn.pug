@@ -8,7 +8,8 @@ append config
     - metadescripcion = sushis.content[plato].description
 block content
     // TODO: 
-    +plato(sushis.content[plato], sponsor[numSponsor],sushis.category)
+    - var tamanio = {uno:"G",dos:"M"}
+    +platoTamanio(sushis.content[plato], sponsor[numSponsor],sushis.category,tamanio)
             
     include ../../blocks/btn_atras
     //- TODO:

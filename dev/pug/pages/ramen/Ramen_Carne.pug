@@ -8,7 +8,8 @@ append config
     - metadescripcion = ramens.content[plato].description
 block content
     // TODO: 
-    +plato(ramens.content[plato], sponsor[numSponsor],ramens.category)
+    - var tamanio = {uno:"G",dos:"M"}
+    +platoTamanio(tallarines.content[plato], sponsor[numSponsor],tallarines.category,tamanio)
             
     include ../../blocks/btn_atras
     //- TODO:

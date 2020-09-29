@@ -20,7 +20,7 @@ mixin plato(plato,sponsor,category)
                 .sponsors__body
                     include sponsor
                     +sponsor(sponsor)
-mixin plato2(plato,sponsor,category)
+mixin platoUnidades(plato,sponsor,category,unidades)
     .content__plate
         .plate
             .plate__img
@@ -34,14 +34,14 @@ mixin plato2(plato,sponsor,category)
                     if(plato.description)
                         p.plate__text !{plato.description}
                     if(plato.price_uno)
-                        p.plate__price M = Bs&nbsp;!{plato.price_uno}
+                        p.plate__price !{unidades.valoruno}&nbsp;!{plato.price_uno}&nbsp;Bs
                     if(plato.price_dos)
-                        p.plate__price XL = Bs&nbsp;!{plato.price_dos}
+                        p.plate__price !{unidades.valoruno}&nbsp;!{plato.price_dos}&nbsp;Bs
             .sponsors
                 .sponsors__body
                     include sponsor
                     +sponsor(sponsor)
-mixin plato3(plato,sponsor,category)
+mixin platoTamanio(plato,sponsor,category,tamanio)
     .content__plate
         .plate
             .plate__img
@@ -55,11 +55,9 @@ mixin plato3(plato,sponsor,category)
                     if(plato.description)
                         p.plate__text !{plato.description}
                     if(plato.price_uno)
-                        p.plate__price S = Bs&nbsp;!{plato.price_uno}
+                        p.plate__price #{tamanio.uno}&nbsp;!{plato.price_uno}&nbsp;Bs
                     if(plato.price_dos)
-                        p.plate__price M = Bs&nbsp;!{plato.price_dos}
-                    if(plato.price_tres)
-                        p.plate__price XL = Bs&nbsp;!{plato.price_tres}
+                        p.plate__price #{tamanio.dos}&nbsp;!{plato.price_dos}&nbsp;Bs
             .sponsors
                 .sponsors__body
                     include sponsor

@@ -8,7 +8,8 @@ append config
     - metadescripcion = otros.content[plato].description
 block content
     // TODO: 
-    +plato(otros.content[plato], sponsor[numSponsor],otros.category)
+    - var unidades = {valoruno: "6 uni", valordos:"3 uni"}
+    +platoUnidades(otros.content[plato], sponsor[numSponsor],otros.category,unidades)
             
     include ../../blocks/btn_atras
     //- TODO:
