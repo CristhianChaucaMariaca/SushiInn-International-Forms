@@ -4,13 +4,13 @@ mixin header(title)
         h3.lists__title #{title}
 
 mixin body(items)
-    .lists__body
+    .lists__body.lists__body--center
         each item in items
             .lists__item
                 p.lists__name #{item.name}
-                p.lists__price #{item.price}
-                if(item.price_dos)
-                    p.lists__price--right #{item.price_dos}
+                //- p.lists__price #{item.price}
+                //- if(item.price_dos)
+                //-     p.lists__price--right #{item.price_dos}
 - var names = ["","Vaso","500ml", "Lt.","Pitcher"]
 mixin chops(items)
     .lists__body
