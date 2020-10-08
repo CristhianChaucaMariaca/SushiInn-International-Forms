@@ -2,14 +2,14 @@ extends ../../templates/template-plate.pug
 include ../../mixins/plato
 append config
     //- TODO: * Modificar el numero de plato. Y el nombre del objeto
-    - plato = 8;
+    - plato = 1;
     //- - numSponsor= 0; 
     - page = otros.content[plato].text
     - metadescripcion = otros.content[plato].description
 block content
     // TODO: 
-    - var unidades = {valoruno: "6 uni", valordos:"3 uni"}
-    +platoUnidades(otros.content[plato], sponsor[numSponsor],otros.category,unidades)
+    - var unidades = {valoruno: "6 uni", valordos:false}
+    +platoList(otros.content[plato], sponsor[numSponsor],otros.category,unidades)
             
     include ../../blocks/btn_atras
     //- TODO:

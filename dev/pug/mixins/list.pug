@@ -28,3 +28,13 @@ mixin chops(items)
                         p.chops__price #{item.pricedos}
                         p.chops__price #{item.pricetres}
                         p.chops__price #{item.pricecuatro}
+
+mixin list(list,unidades)
+    .list
+        each item in list
+            .list__row
+                .list__plate !{item.plate}
+                .list__body
+                    .list__price Bs !{item.price_uno} - !{unidades.valoruno}
+                    if(item.price_dos)
+                        .list__price Bs !{item.price_dos} - !{unidades.valordos}

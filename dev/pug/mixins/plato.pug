@@ -62,3 +62,21 @@ mixin platoTamanio(plato,sponsor,category,tamanio)
                 .sponsors__body
                     include sponsor
                     +sponsor(sponsor)
+
+mixin platoList(plato,sponsor,category,unidades)
+    .content__plate
+        .plate
+            .plate__img
+                .plate__logo
+                    img(src="media/"+logo.img+logo.extention, alt=logo.alt)
+                picture.plate__cont__picture
+                    img.plate__picture(srcset="media/"+category+"/"+plato.img.picture+plato.img.extention, alt=title)
+            .container
+                .plate__body
+                    h2.plate__title !{plato.text}
+                    include list
+                    +list(plato.list,unidades)
+            .sponsors
+                .sponsors__body
+                    include sponsor
+                    +sponsor(sponsor)
