@@ -6,6 +6,8 @@ block append config
 block content
     .container
         .lists
+            include ../mixins/sponsor
+            +sponsors(sponsor)
             include ../config/bebidas
             include ../mixins/list
             +header(sinalcohol.name)
@@ -20,8 +22,6 @@ block content
             +header(vino.name)
             .lists__content
                 +body(vino.items)
-            include ../mixins/sponsor
-            +sponsors(sponsor)
             
     
                     
